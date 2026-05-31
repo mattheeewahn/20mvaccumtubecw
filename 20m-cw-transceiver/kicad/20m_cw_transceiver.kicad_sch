@@ -1,0 +1,571 @@
+(kicad_sch
+  (version 20231120)
+  (generator "kiro_transceiver_gen")
+  (generator_version "1.0")
+  (uuid "af7b2c3d-1234-5678-9abc-def012345678")
+  (paper "A3")
+  (lib_symbols
+    (symbol "Device:R"
+      (pin_names (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at -1.778 0 90) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254) (type default)) (fill (type none)))
+      )
+      (symbol "R_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1"))
+        (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2"))
+      )
+    )
+    (symbol "Device:C"
+      (pin_names (offset 0.254))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+      (property "Value" "C" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+      (property "Footprint" "" (at 0.9652 -2.54 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "C_0_1"
+        (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.508) (type default)) (fill (type none)))
+        (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.508) (type default)) (fill (type none)))
+      )
+      (symbol "C_1_1"
+        (pin passive line (at 0 3.81 270) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "1"))
+        (pin passive line (at 0 -3.81 90) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "2"))
+      )
+    )
+    (symbol "Device:L"
+      (pin_names (offset 1.016))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "L" (at -1.016 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "L" (at 1.016 0 90) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "L_0_1"
+        (arc (start 0 -2.54) (mid 0.6323 -1.905) (end 0 -1.27) (stroke (width 0) (type default)) (fill (type none)))
+        (arc (start 0 -1.27) (mid 0.6323 -0.635) (end 0 0) (stroke (width 0) (type default)) (fill (type none)))
+        (arc (start 0 0) (mid 0.6323 0.635) (end 0 1.27) (stroke (width 0) (type default)) (fill (type none)))
+        (arc (start 0 1.27) (mid 0.6323 1.905) (end 0 2.54) (stroke (width 0) (type default)) (fill (type none)))
+      )
+      (symbol "L_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27) (name "1" (effects (font (size 1.27 1.27)))) (number "1"))
+        (pin passive line (at 0 -3.81 90) (length 1.27) (name "2" (effects (font (size 1.27 1.27)))) (number "2"))
+      )
+    )
+    (symbol "Device:Crystal"
+      (pin_names (offset 1.016))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "Y" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Crystal" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Crystal_0_1"
+        (rectangle (start -0.762 -1.524) (end 0.762 1.524) (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -1.524 -1.778) (xy -1.524 1.778)) (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 1.524 -1.778) (xy 1.524 1.778)) (stroke (width 0.254) (type default)) (fill (type none)))
+      )
+      (symbol "Crystal_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.286) (name "1" (effects (font (size 1.27 1.27)))) (number "1"))
+        (pin passive line (at 3.81 0 180) (length 2.286) (name "2" (effects (font (size 1.27 1.27)))) (number "2"))
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "Device:R")
+    (at 50.8 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000001")
+    (property "Reference" "R1" (at 53.34 44.45 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "330R" (at 50.8 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 50.8 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 50.8 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000001")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000002")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "R1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 50.8 63.5 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000002")
+    (property "Reference" "R2" (at 53.34 63.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100R" (at 50.8 67.31 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 50.8 63.5 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 50.8 63.5 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000003")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000004")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "R2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 63.5 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000003")
+    (property "Reference" "C1" (at 66.04 44.45 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100pF" (at 63.5 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 63.5 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 63.5 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000005")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000006")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "C1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 76.2 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000004")
+    (property "Reference" "C2" (at 78.74 44.45 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47pF" (at 76.2 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 76.2 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 76.2 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000007")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000008")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "C2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:L")
+    (at 88.9 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000005")
+    (property "Reference" "L1" (at 91.44 44.45 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "2.2uH T37-6" (at 88.9 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Inductor_THT:L_Axial_L5.7mm_D2.2mm_P10.16mm_Horizontal" (at 88.9 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 88.9 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000009")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000010")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "L1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:Crystal")
+    (at 101.6 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000006")
+    (property "Reference" "Y1" (at 101.6 39.37 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "9MHz" (at 101.6 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Crystal:Crystal_HC49-4H_Vertical" (at 101.6 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 101.6 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000011")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000012")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "Y1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:Crystal")
+    (at 114.3 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000007")
+    (property "Reference" "Y2" (at 114.3 39.37 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "9MHz" (at 114.3 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Crystal:Crystal_HC49-4H_Vertical" (at 114.3 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 114.3 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000013")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000014")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "Y2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:Crystal")
+    (at 127 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000008")
+    (property "Reference" "Y3" (at 127 39.37 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "9MHz" (at 127 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Crystal:Crystal_HC49-4H_Vertical" (at 127 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 127 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000015")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000016")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "Y3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:Crystal")
+    (at 139.7 44.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000009")
+    (property "Reference" "Y4" (at 139.7 39.37 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "9MHz" (at 139.7 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Crystal:Crystal_HC49-4H_Vertical" (at 139.7 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 139.7 44.45 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000017")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000018")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "Y4")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 50.8 101.6 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000010")
+    (property "Reference" "R10" (at 53.34 101.6 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "4.7K" (at 50.8 105.41 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 50.8 101.6 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 50.8 101.6 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000019")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000020")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "R10")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 88.9 101.6 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000011")
+    (property "Reference" "R20" (at 91.44 101.6 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47K" (at 88.9 105.41 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 88.9 101.6 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 88.9 101.6 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000021")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000022")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "R20")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 101.6 120.65 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000012")
+    (property "Reference" "R21" (at 104.14 120.65 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10R 2W" (at 101.6 124.46 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" (at 101.6 120.65 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 101.6 120.65 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000023")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000024")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "R21")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:L")
+    (at 63.5 88.9 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000013")
+    (property "Reference" "L5" (at 66.04 88.9 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "RFC 100uH" (at 63.5 92.71 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Inductor_THT:L_Axial_L5.7mm_D2.2mm_P10.16mm_Horizontal" (at 63.5 88.9 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 63.5 88.9 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000025")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000026")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "L5")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:L")
+    (at 101.6 88.9 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000014")
+    (property "Reference" "L10" (at 104.14 88.9 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "RFC 2.5mH" (at 101.6 92.71 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Inductor_THT:L_Axial_L12.0mm_D5.0mm_P15.24mm_Horizontal" (at 101.6 88.9 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 101.6 88.9 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000027")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000028")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "L10")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:L")
+    (at 127 101.6 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000015")
+    (property "Reference" "L11" (at 127 97.79 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1.5uH T130-6" (at 127 105.41 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Inductor_THT:L_Toroid_Vertical_L14.0mm_W7.0mm" (at 127 101.6 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 127 101.6 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000029")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000030")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "L11")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 114.3 109.22 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000016")
+    (property "Reference" "C40" (at 116.84 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "30-300pF TUNE" (at 114.3 113.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 114.3 109.22 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 114.3 109.22 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000031")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000032")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "C40")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 139.7 109.22 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-0001-0001-0001-000000000017")
+    (property "Reference" "C41" (at 142.24 109.22 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "50-500pF LOAD" (at 139.7 113.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 139.7 109.22 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 139.7 109.22 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000033")
+    )
+    (pin "2"
+      (uuid "a1b2c3d4-0001-0001-0001-100000000034")
+    )
+    (instances
+      (project "20m_cw_transceiver"
+        (path "/af7b2c3d-1234-5678-9abc-def012345678"
+          (reference "C41")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (text "20m CW Transceiver - VFO/RX Section"
+    (at 76.2 25.4 0)
+    (effects (font (size 2.54 2.54)))
+    (uuid "a1b2c3d4-0001-0001-0001-000000000090")
+  )
+  (text "TX Driver + PA Section (6146B 50W)"
+    (at 76.2 76.2 0)
+    (effects (font (size 2.54 2.54)))
+    (uuid "a1b2c3d4-0001-0001-0001-000000000091")
+  )
+  (sheet_instances
+    (path "/"
+      (page "1")
+    )
+  )
+)
